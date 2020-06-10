@@ -6,6 +6,6 @@ module CommonActions
   end
   
   def logged_in?
-    !current_user.nill?
+    !current_user.nil?
   end
 end
