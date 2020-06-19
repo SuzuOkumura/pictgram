@@ -16,4 +16,10 @@ Rails.application.routes.draw do
   
   get    '/topics', to: 'topics#index'
   
+  resources :favorites
+  
+  get    'favorites/index'
+  post   '/favorites', to: 'favorites#create'
+  '
+  
 end
