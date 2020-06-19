@@ -13,4 +13,7 @@ Rails.application.routes.draw do
   delete '/logout', to: 'sessins#destroy'
 
   resources :topics
+  
+  get    '/topics', to: 'topics#index'
+  
 end
