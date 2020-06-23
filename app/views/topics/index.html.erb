@@ -14,7 +14,7 @@
               <%= topic.favorites.count %>
             <% end %>
           <% else %>
-            <%= link_to favorites_path(topic_id: topic.id), method: delete %>
+            <%= link_to favorites_path(topic_id: topic.id), method: delete do %>
               <%= image_tag 'icons/heart.png', class: 'topic-index-icon' %>
               <%= topic.favorites.count %>
           <% end %>
